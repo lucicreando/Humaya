@@ -1,0 +1,28 @@
+header {
+    display: flex;
+}
+.productos{
+    display: flex;
+}
+
+.productos div figure img {
+    width: 20rem;
+    height: 10rem;
+}
+
+.contenedor-calidad{
+    display: flex;
+    width: auto;
+}
+
+.contenedor-contactanos{
+    display: flex;
+}
+
+.contenedor-recetas{
+    display: flex;
+}
+
+.contenedor-encontranos{
+    display: flex;
+}
