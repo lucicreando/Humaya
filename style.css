@@ -9,25 +9,27 @@
 /* Estilos para el encabezado y la barra de navegación */
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333; /* Puedes cambiar el color de fondo según tus preferencias */
+    justify-content: center;
+    background-color: #333; 
     padding: 10px 20px;
   }
   
   nav {
     display: flex;
     align-items: center;
+    align-content: center;
+    
   }
 
   /* Estilos para los elementos de menú */
-.Menu {
+.menu {
     list-style: none;
     display: flex;
   }
   
-  .Menu li {
+  .menu li {
     margin-right: 20px;
+    margin-left: 20px;
     color: white; 
     cursor: pointer;
   }
@@ -38,14 +40,12 @@ header {
     height: auto;
   }
 
-  /* Alinear elementos en posiciones específicas */
-.Menu:nth-child(1) {
-    margin-right: auto;
-  }
-  
-  .Menu:nth-child(3) {
-    margin-left: auto;
-  }
+.principal {
+    background-image: url("./img/Central/imagenCentral.png");
+    width: 96%;
+    min-height: calc(87vh);
+    background-image: url("./img/Central/imagenCentral.png");
+}
 
 .titulos-section-h2 {
     text-align: center;
