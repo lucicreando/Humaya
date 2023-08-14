@@ -10,7 +10,7 @@
 header {
     display: flex;
     justify-content: center;
-    background-color: #333; 
+   
     padding: 10px 20px;
   }
   
@@ -41,10 +41,27 @@ header {
   }
 
 .principal {
+    height: 1024px;
     background-image: url("./img/Central/imagenCentral.png");
-    width: 96%;
-    min-height: calc(87vh);
-    background-image: url("./img/Central/imagenCentral.png");
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+} 
+
+.principal div{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-content: start;
+}
+
+.texto-principal{
+    display: inline-block;
+}
+
+.contenedor-principal {
+    margin-top: 20%;
+    padding-left: 60%;
 }
 
 .titulos-section-h2 {
