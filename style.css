@@ -91,8 +91,9 @@ nav {
     font-family: 'Poppins', sans-serif;
     font-size: larger;
     text-align: center;
-    margin: 20px;
+    margin: 0;
     padding: 20px;
+    background-color: goldenrod;
 }
 
 /* Estilos para la sección de cuatro productos */
@@ -156,24 +157,26 @@ nav {
 /* Estilos para la distribución de iconos y textos */
 .contenedor-calidad {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    max-width: 600px;
+    width: auto;
     margin: 0 auto;
-    background-color: dimgrey;
+    background-color: rgb(110, 104, 104);
 }
 
-.contenedor-calidad>div {
+.contenedor-calidad div {
     text-align: center;
 }
 
 .contenedor-calidad i {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 50px;
+    align-items: end;
+    padding: 40px;
 }
 
 .contenedor-calidad p {
-    margin: 0;
+    margin-bottom: auto;
+    padding: 50px;
     font-weight: bold;
     text-align: center;
 }
@@ -181,10 +184,11 @@ nav {
 /* Estilos para la sección "Contactanos" */
 .contenedor-contactanos {
     display: flex;
+    background-color:beige;
 }
 
 section img {
-    max-width: 80%;
+    max-width: 100%;
     padding: 0;
 }
 
