@@ -104,6 +104,86 @@ nav {
     align-items: center;
 }
 
+/* Estilo para el carrusel */
+#carouselExampleCaptions {
+    width: 100%; /* Ajustar el ancho según sea necesario */
+    margin: 0 auto; /* Centrar el carrusel */
+  }
+  
+  /* Estilo para los controles de navegación (flechas izquierda y derecha) */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: auto; /* Ancho automático */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    border: none; /* Sin borde */
+  }
+  
+  /* Estilo para los íconos de navegación (flechas izquierda y derecha) */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    font-size: 30px; /* Tamaño de fuente del ícono */
+    color: white; /* Color del ícono */
+  }
+  
+  /* Estilo para los indicadores de diapositivas (puntos debajo del carrusel) */
+  .carousel-indicators {
+    position: absolute; /* Posición absoluta */
+    bottom: 20px; /* Distancia desde abajo */
+    left: 0; /* Alinear a la izquierda */
+    right: 0; /* Alinear a la derecha */
+    text-align: center; /* Alinear al centro */
+  }
+  
+  /* Estilo para los botones indicadores (puntos debajo del carrusel) */
+  .carousel-indicators button {
+    width: 10px; /* Ancho de los botones */
+    height: 10px; /* Altura de los botones */
+    border-radius: 50%; /* Hacer que los botones sean circulares */
+    border: none; /* Sin borde */
+    background-color: rgba(255, 255, 255, 0.5); /* Color de fondo semi-transparente */
+    margin: 0 5px; /* Espacio entre los botones */
+  }
+  
+  /* Estilo para el botón indicador activo (punto activo) */
+  .carousel-indicators .active {
+    background-color: white; /* Cambiar el color de fondo para el punto activo */
+  }
+  
+  /* Estilo para el texto en las diapositivas */
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el texto */
+    padding: 20px; /* Espacio interno alrededor del texto */
+    border-radius: 5px; /* Borde redondeado para el texto */
+    color: white; /* Color del texto */
+  }
+  
+  /* Estilo para los títulos en las diapositivas */
+  .carousel-caption h3 {
+    font-size: 24px; /* Tamaño de fuente del título */
+  }
+  
+  /* Estilo para el texto en las diapositivas */
+  .carousel-caption p {
+    font-size: 16px; /* Tamaño de fuente del texto */
+    margin-bottom: 10px; /* Espacio entre párrafos */
+  }
+  
+  /* Estilo para los enlaces en las diapositivas */
+  .carousel-caption a {
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    color: #ff6600; /* Color de los enlaces */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  /* Estilo para los enlaces cuando se pasan por encima */
+  .carousel-caption a:hover {
+    color: #ff3300; /* Cambiar el color al pasar el cursor */
+  }
+
+/*.contenedor-inter-prod {
+    display: flex;
+}
+
 .productos div figure img {
     width: 20rem;
     height: 10rem;
@@ -127,7 +207,7 @@ nav {
 .text-producto-2 {
     margin-right: auto;
     width: 50%;
-}
+}*/
 
 .productos h3 {
     font-size: 1.5rem;
@@ -223,16 +303,25 @@ section img {
     cursor: pointer;
 }
 
-.footer {
+.contenedor-recetas {
     display: flex;
+    justify-content: center;
+    column-gap: 70px;
+    background-color: beige;
+}
+
+.footer {
     justify-content: space-between;
     align-items: center;
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 30px;
+}
 
-
-
+.contenedor-info-fin {
+    display: flex ;
+    column-gap: 100px;
+}
 /* Estilos para dispositivos móviles */
 /*@media (max-width: 768px) {
     section {

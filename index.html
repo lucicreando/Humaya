@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Humaya</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="ruta/a/bootstrap.min.css">
 </head>
 
 <body>
@@ -42,57 +43,47 @@
       <div class="titulos-section-h2">
         <h2>Productos</h2>
       </div>
-      <div class="contenedor-productos">
-        <div class="productos">
-          <div class="producto-1-3">
-            <figure>
-              <img src="./img/Productos/Producto1.png" alt="Dulce de leche tradicional">
-            </figure>
-          </div>
-          <div class="text-producto-1-3">
-            <h3>Dulce de Leche Tradicional</h3>
-            <P>Elaboración artesanal de principio a fin, con un sabor intenso, receta tradicional.</P><br>
-            <p><b>Presentación en frasco de vidrio de 580 gramos.</b></p><br><br>
-            <a href="#">Más información</a>
-          </div>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
-        <div class="productos">
-          <div class="producto-2">
-            <figure>
-              <img src="./img/Productos/Producto2.png" alt="Dulce de leche sin azucar">
-            </figure>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/Productos/Producto1DulceTradicional.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Dulce de Leche Tradicional</h3>
+              <P>Elaboración artesanal de principio a fin, con un sabor intenso, receta tradicional.</P><br>
+              <p><b>Presentación en frasco de vidrio de 580 gramos.</b></p><br><br>
+              <a href="#">Más información</a>
+            </div>
           </div>
-          <div class="Productos">
-            <div class="text-producto-2">
+          <div class="carousel-item">
+            <img src="./img/Productos/Producto2DulceSinAzucar.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
               <h3>Dulce de Leche Sin Azúcar</h3>
-              <P>Elaboración artesanal para cuidar tu silueta sin renunciar a nada, endulzado naturalmente con stevia.
-              </P>
-              <br>
-              <p><b>Presentación en frasco de vidrio de 580 gramos y 280 gramos.</b></p><br><br>
-              <a href="#">Más información</a>
+                <P>Elaboración artesanal para cuidar tu silueta sin renunciar a nada, endulzado naturalmente con stevia.
+                </P>
+                <br>
+                <p><b>Presentación en frasco de vidrio de 580 gramos y 280 gramos.</b></p><br><br>
+                <a href="#">Más información</a>
             </div>
           </div>
-          <div class="productos">
-            <div>
-              <figure>
-                <img src="./img/Productos/Producto3.png" alt="Dulce choconutt">
-              </figure>
-            </div>
-            <div class="text-producto-1-3">
+          <div class="carousel-item">
+            <img src="./img/Productos/Producto3TortaChocoNutt.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
               <h3>Dulce Choconutt</h3>
-              <P>Elaboración artesanal para el caprico dulce, combinación de dulce de leche, chocolate y pasta de
-                avellanas. Una delicia.</P><br>
-              <p><b>Presentación en frasco de vidrio de 280 gramos.</b></p><br><br>
-              <a href="#">Más información</a>
+                <P>Elaboración artesanal para el caprico dulce, combinación de dulce de leche, chocolate y pasta de
+                  avellanas. Una delicia.</P><br>
+                <p><b>Presentación en frasco de vidrio de 280 gramos.</b></p><br><br>
+                <a href="#">Más información</a>
             </div>
           </div>
-          <div class="productos">
-            <div class="producto-1-3">
-              <figure>
-                <img src="./img/Productos/Producto4b.png" alt="Alfajores de maicena fondo">
-              </figure>
-            </div>
-            <div>
+          <div class="carousel-item">
+            <img src="./img/Productos/Producto4Alfajores.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
               <h3>Alfajores de Maicena</h3>
               <P>Alfajores de maicena, rellenos con dulce de leche y cubiertos con coco rallado. Relleno con 2cm de pura
                 dulzura. Puedes elegir entre dulce de leche tradicional, sin azúcar o choconut. </P><br>
@@ -101,6 +92,15 @@
             </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
         <!-- Fin Producto -->
     </section>
     <section>
@@ -202,6 +202,9 @@
     <!-- Fin Recetas -->
   </main>
   <script src="https://kit.fontawesome.com/4fe6e8d73e.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.5.0/js/bootstrap.bundle.min.js"></script>
+  <script src="ruta/a/jquery.min.js"></script>
+  <script src="ruta/a/bootstrap.min.js"></script>
 </body>
 <footer class="footer">
   <section>
@@ -209,51 +212,53 @@
       <div class="titulos-section-h2">
         <h2>Encontranos en:</h2>
       </div>
-      <div class="contenedor-encontranos">
-        <figure class="logo">
-          <img src="./img/Logo/LogoHumaya100x100.png" alt="Logotipo Humaya">
-        </figure>
-      </div>
-      <div class="menu">
-        <h4>Menú</h4>
-        <br>
-        <ul>
-          <li>Home</li>
-          <li>Productos</li>
-          <li>Locales</li>
-          <li>Contactos</li>
-        </ul>
-      </div>
-      <div class="navegacion">
-        <h4>Navegación</h4>
-        <br>
-        <ul>
-          <li>Preguntas frecuentes</li>
-          <li>Distribuidores</li>
-          <li>Prensa</li>
-          <li>Recetas exclusivas</li>
-        </ul>
-      </div>
-      <div class="redes">
-        <h4>Redes</h4>
-        <div>
-          <i class="fa-brands fa-instagram"></i>
+      <div class="contenedor-info-fin">
+        <div class="contenedor-encontranos">
+          <figure class="logo">
+            <img src="./img/Logo/LogoHumaya100x100.png" alt="Logotipo Humaya">
+          </figure>
         </div>
-        <div>
-          <i class="fa-brands fa-square-facebook"></i>
+        <div class="menu2">
+          <h4>Menú</h4>
+          <br>
+          <ul>
+            <li>Home</li>
+            <li>Productos</li>
+            <li>Locales</li>
+            <li>Contactos</li>
+          </ul>
         </div>
-        <div>
-          <i class="fa-brands fa-tiktok"></i>
+        <div class="navegacion">
+          <h4>Navegación</h4>
+          <br>
+          <ul>
+            <li>Preguntas frecuentes</li>
+            <li>Distribuidores</li>
+            <li>Prensa</li>
+            <li>Recetas exclusivas</li>
+          </ul>
         </div>
-      </div>
-      <div class="ubicacion">
-        <h4>Ubicación</h4>
-        <div>
-          <p>Montes de Oca 2356, CABA</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.0392292867527!2d-58.370521100000005!3d-34.6537122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334aab78be889%3A0xe808082ff7311cac!2sAv.%20Montes%20de%20Oca%202356%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1691981080748!5m2!1ses!2sar"
-            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="redes">
+          <h4>Redes</h4>
+          <div>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div>
+            <i class="fa-brands fa-square-facebook"></i>
+          </div>
+          <div>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+        <div class="ubicacion">
+          <h4>Ubicación</h4>
+          <div>
+            <p>Montes de Oca 2356, CABA</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.0392292867527!2d-58.370521100000005!3d-34.6537122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334aab78be889%3A0xe808082ff7311cac!2sAv.%20Montes%20de%20Oca%202356%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1691981080748!5m2!1ses!2sar"
+              width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </div>
     </div>
