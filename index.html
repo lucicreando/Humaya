@@ -34,7 +34,7 @@
           <p>Los productos "Humaya" son elaborados hace más de 50 años; fiel a las tradiciones familiares y sabores
             caseros, acompañandote en los momentos más importantes de la vida. </p>
           <br><br><br>
-          <a href="#"><b>Conocenos</b></a>
+          <a href="#" style="text-decoration: none;"><b>Contactanos</b></a>
         </div>
       </div>
     </section>
@@ -142,29 +142,30 @@
       <div class="titulos-section-h2">
         <h2>Contactanos</h2>
       </div>
-      <div class="contenedor-contactanos">
-        <div>
-          <figure>
-            <img src="./img/Productos/Producto1.png" alt="Dulce de leche">
-          </figure>
+        <div class="contenedor-contactanos" >
+          <div>
+            <figure>
+              <img src="./img/Productos/Producto1.png" alt="Dulce de leche">
+            </figure>
+          </div>
+           <div>
+            <div>
+              <form id="contactForm">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="consulta">Consulta:</label>
+                <textarea id="consulta" name="consulta" rows="4" required></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+           </div>
         </div>
-        <div>
-          <P><b>Déjanos tu consulta y nuestro personal se podrá en contacto a la brevedad:</b></P>
-          <br>
-          <form id="contactForm">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br>
-            <label for="consulta">Consulta:</label>
-            <textarea id="consulta" name="consulta" rows="4" required></textarea>
-            <br>
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
-      </div>
+        
     </section>
     <!-- Fin Contactanos -->
     <section>
