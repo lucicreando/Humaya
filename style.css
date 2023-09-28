@@ -154,11 +154,12 @@ nav {
     padding: 20px; /* Espacio interno alrededor del texto */
     border-radius: 5px; /* Borde redondeado para el texto */
     color: white; /* Color del texto */
+    font-size: x-large;
   }
   
   /* Estilo para los títulos en las diapositivas */
   .carousel-caption h3 {
-    font-size: 24px; /* Tamaño de fuente del título */
+    font-size: 34px; /* Tamaño de fuente del título */
   }
   
   /* Estilo para el texto en las diapositivas */
@@ -179,32 +180,7 @@ nav {
     color: #ff3300; /* Cambiar el color al pasar el cursor */
   }
 
-.productos h3 {
-    font-size: 1.5rem;
-    margin: 20px;
-    padding: 20px;
-}
-
-.productos p {
-    margin: 5px 0;
-}
-
-.productos p b {
-    color: brown;
-}
-
-.productos a {
-    text-decoration: none;
-    color: #06080b;
-    background-color: brown;
-    color: white;
-    padding: 10px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* Estilos para la distribución de iconos y textos */
+  /* Estilos para la distribución de iconos y textos */
 .contenedor-calidad {
     display: flex;
     justify-content: center;
@@ -261,7 +237,6 @@ section img {
     margin-bottom: 10px;
     border: 1px solid brown;
     border-radius: 4px;
-
 }
 
 #contactForm button {
@@ -280,6 +255,11 @@ section img {
     background-color: antiquewhite;
 }
 
+.card-title {
+    font-size: xx-large;
+    color: brown
+}
+
 .footer {
     justify-content: space-between;
     align-items: center;
@@ -291,6 +271,7 @@ section img {
 .contenedor-info-fin {
     display: flex ;
     column-gap: 100px;
+    margin-top: 30px;
 }
 /* Estilos para dispositivos móviles */
 /*@media (max-width: 768px) {
